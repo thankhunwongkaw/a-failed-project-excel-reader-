@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <header>choose one(all value must be int)</header>
+<form action="/mean" method="post">
+    <select name='name'>
+        {% for name in df%}
+        <option value="{{name}}" name="{{name}}">{{name}}</option>
+        {%endfor%}
+    </select>
+    <input type="submit" value="choose what to group by">
+</form>
+
+</html>

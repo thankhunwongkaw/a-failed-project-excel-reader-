@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        this is your result
+    </header>
+    <body>
+        <table>
+            {% for name, count in res.items() %}
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{count}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
